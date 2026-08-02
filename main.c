@@ -14,7 +14,6 @@
 #include "inc/frame_MSG.h"
 #include "inc/emicbus2_core.h"
 #include "inc/Persist.h"
-#include "inc/await.h"
 #include "inc/system.h"
 #include "inc/userFncFile.h"
 
@@ -27,13 +26,10 @@ int main(void)
 	LEDs_led_init();
 	USB_Init();
 	EMICBus2_init();
-	onReset();
 	do
 	{
-		timer1_Poll();
 		Poll_USB();
 		poll_EMICBus2();
-		await_poll();
 	}
 	while(1);
 }

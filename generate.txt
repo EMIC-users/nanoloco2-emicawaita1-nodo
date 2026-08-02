@@ -6,8 +6,6 @@
 
 // Functions:
 
-// EMIC-Await:
-
 
 // Events:
 
@@ -222,7 +220,6 @@
 // el transpiler define usedFunction.await_scheduler + la coleccion awaits.*
 // en usedFunction.emic (EMIC_AWAIT_SPEC.md 12.5). Sin esperas, esta API solo
 // publica la esperable 'delay' en el discovery.
-
 
 
 
