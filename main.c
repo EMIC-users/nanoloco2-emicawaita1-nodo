@@ -30,6 +30,7 @@ int main(void)
 	onReset();
 	do
 	{
+		LEDs_led_poll();
 		timer1_Poll();
 		Poll_USB();
 		poll_EMICBus2();

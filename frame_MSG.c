@@ -40,6 +40,13 @@ void pI2C(char* format_, ...)
 
 void emicbus2_rx_MSG(const uint8_t *b, uint16_t n)
 {
-    (void)b; (void)n;
+    char tag[TAG_MAX + 1];
+    uint8_t len = b[1], tl = b[2];
+    if (tl > TAG_MAX || (uint16_t)tl + 1 > len)
+        return;                              /* ya contado por el core */
+    memcpy(tag, &b[3], tl);
+    tag[tl] = 0;
+    emicbus2_in_bind(&b[3 + tl], (uint16_t)(len - 1 - tl));
+    eI2C(tag, &emicbus2_in_stream);
 }
 

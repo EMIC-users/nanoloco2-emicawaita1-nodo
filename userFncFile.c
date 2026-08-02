@@ -20,7 +20,22 @@
 
 void onReset()
 {
+    LEDs_led_blink(100, 200, 3);
     setTime1(1000, 'A');
+}
+
+
+void eI2C(char* tag, const streamIn_t* const msg)
+{
+    LEDs_led_blink(100, 101, 1);
+    pUSB("$s\t$r", tag, msg);
+}
+
+
+void eUSB(char* tag, const streamIn_t* const msg)
+{
+    LEDs_led_blink(100, 101, 2);
+    pI2C("$s\t$r", tag, msg);
 }
 
 
@@ -62,11 +77,23 @@ static void etOut1_awaitFsm(void)
     {
     case 1:
         LEDs_led_state(1);
-        /* --- delay(500 ms): suspende la tarea hasta vencer la deadline --- */
-        etOut1_awaitCtx.t_wake = getSystemMilis() + (uint32_t)(500);
+        /* --- delay(100 ms): suspende la tarea hasta vencer la deadline --- */
+        etOut1_awaitCtx.t_wake = getSystemMilis() + (uint32_t)(100);
         etOut1_awaitCtx.state = 2;
         return;
     case 2:
+        LEDs_led_state(0);
+        /* --- delay(100 ms): suspende la tarea hasta vencer la deadline --- */
+        etOut1_awaitCtx.t_wake = getSystemMilis() + (uint32_t)(100);
+        etOut1_awaitCtx.state = 3;
+        return;
+    case 3:
+        LEDs_led_state(1);
+        /* --- delay(500 ms): suspende la tarea hasta vencer la deadline --- */
+        etOut1_awaitCtx.t_wake = getSystemMilis() + (uint32_t)(500);
+        etOut1_awaitCtx.state = 4;
+        return;
+    case 4:
         LEDs_led_state(0);
     }
     /* fin del bloque: la tarea vuelve a idle */
