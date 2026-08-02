@@ -80,6 +80,7 @@ static void etOut1_awaitFsm(void)
         return;
     case 4:
         LEDs_led_state(0);
+        LEDs_led_blink(, , );
     }
     /* fin del bloque: la tarea vuelve a idle */
     etOut1_awaitCtx.state = 0;
