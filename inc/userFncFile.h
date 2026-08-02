@@ -12,7 +12,9 @@
 #include "streamIn.h"
 
 /* Function Prototypes */
+void onReset();
 void etOut1();
+void etOut1_awaitPoll(void);
 
 #endif /* USERFNCFILE_H */
 

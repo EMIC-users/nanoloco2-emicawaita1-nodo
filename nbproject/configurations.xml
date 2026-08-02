@@ -32,6 +32,7 @@
       <itemPath>emicbus2_core.c</itemPath>
       <itemPath>Flash.c</itemPath>
       <itemPath>Persist.c</itemPath>
+      <itemPath>await.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>userFncFile.c</itemPath>
     </logicalFolder>

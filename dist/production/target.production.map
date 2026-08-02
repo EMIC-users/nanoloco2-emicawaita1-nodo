@@ -41,7 +41,6 @@ Command:
   C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o \
   C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o \
   C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Persist.o \
-  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\await.o \
   C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\main.o \
   C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o \
   --defsym=__MPLAB_BUILD=1 \
@@ -243,26 +242,24 @@ section                    address   length (PC units)   length (bytes) (dec)
 .text                        0x200              0x3f48          0x5eec  (24300)
 .const                      0x4148                0x10            0x18  (24)
 .text                       0x4158              0x150a          0x1f8f  (8079)
-.dinit                      0x5662                0xc4           0x126  (294)
-.text                       0x5726               0x260           0x390  (912)
+.dinit                      0x5662                0xb8           0x114  (276)
+.text                       0x571a               0x156           0x201  (513)
 myFlashSpace                0x6000               0x400           0x600  (1536)
 
-                 Total "program" memory used (bytes):         0x8949  (35145) 53%
+                 Total "program" memory used (bytes):         0x87a8  (34728) 53%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0            0x3c  (60)
-.ndata                       0x83c                   0             0x2  (2)
-.bss                         0x83e                   0           0x7ac  (1964)
-.data                        0xfea                   0            0x74  (116)
-.bss                        0x105e                   0             0xa  (10)
-.data                       0x1068                   0             0x4  (4)
-.bss                        0x106c                   0             0x4  (4)
+.nbss                        0x800                   0            0x32  (50)
+.ndata                       0x832                   0             0x2  (2)
+.bss                         0x834                   0           0x7ac  (1964)
+.data                        0xfe0                   0            0x78  (120)
+.bss                        0x1058                   0             0x4  (4)
 
-                 Total "data" memory used (bytes):          0x870  (2160) 26%
+                 Total "data" memory used (bytes):          0x85c  (2140) 26%
 
 
 Dynamic Memory Usage
@@ -270,9 +267,9 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                       0x1070                              0x1790  (6032)
+stack                       0x105c                              0x17a4  (6052)
 
-                 Maximum dynamic memory (bytes):         0x1790  (6032)
+                 Maximum dynamic memory (bytes):         0x17a4  (6052)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
@@ -286,34 +283,34 @@ External Symbols in Data Memory (by address):
                     0x0808                  _emicbus2_bus_reset
                     0x080a                  _emicbus2_drop
                     0x080c                  _emicbus2_stage_len
-                    0x0832                  _offsetPutc3B
-                    0x0834                  _offset
-                    0x0838                  _UART1_flowControlVar
-                    0x0839                  _UART1_inverted
-                    0x083e                  _UART1_IN_fifo
-                    0x0a44                  _UART1_OUT_fifo
-                    0x0c4a                  _emicbus2_stage
-                    0x1068                  _bufferPutc3B
-                    0x106c                  ___errno_val
+                    0x0828                  _offsetPutc3B
+                    0x082a                  _offset
+                    0x082e                  _UART1_flowControlVar
+                    0x082f                  _UART1_inverted
+                    0x0834                  _UART1_IN_fifo
+                    0x0a3a                  _UART1_OUT_fifo
+                    0x0c40                  _emicbus2_stage
+                    0x1054                  _bufferPutc3B
+                    0x1058                  ___errno_val
 
 External Symbols in Data Memory (by name):
 
-                    0x083e                  _UART1_IN_fifo
-                    0x0a44                  _UART1_OUT_fifo
-                    0x0838                  _UART1_flowControlVar
-                    0x0839                  _UART1_inverted
-                    0x106c                  ___errno_val
-                    0x1068                  _bufferPutc3B
+                    0x0834                  _UART1_IN_fifo
+                    0x0a3a                  _UART1_OUT_fifo
+                    0x082e                  _UART1_flowControlVar
+                    0x082f                  _UART1_inverted
+                    0x1058                  ___errno_val
+                    0x1054                  _bufferPutc3B
                     0x0806                  _emicbus2_arb_lost
                     0x0808                  _emicbus2_bus_reset
                     0x0804                  _emicbus2_crc_err
                     0x080a                  _emicbus2_drop
                     0x0802                  _emicbus2_rx_ok
-                    0x0c4a                  _emicbus2_stage
+                    0x0c40                  _emicbus2_stage
                     0x080c                  _emicbus2_stage_len
                     0x0800                  _emicbus2_tx_ok
-                    0x0834                  _offset
-                    0x0832                  _offsetPutc3B
+                    0x082a                  _offset
+                    0x0828                  _offsetPutc3B
 
 External Symbols in Program Memory (by address):
 
@@ -366,9 +363,9 @@ External Symbols in Program Memory (by address):
                   0x002ecc                  ___toupper_l
                   0x002ed2                  ___stdio_exit
                   0x002ee6                  ___stpcpy
-                  0x002f26                  ___ltdf2
-                  0x002f26                  ___eqdf2
                   0x002f26                  ___ledf2
+                  0x002f26                  ___eqdf2
+                  0x002f26                  ___ltdf2
                   0x002f30                  ___gtdf2
                   0x002f30                  ___gedf2
                   0x002f3a                  ___divsi3
@@ -381,8 +378,8 @@ External Symbols in Program Memory (by address):
                   0x003008                  __funpack
                   0x003032                  ___truncdfsf2
                   0x003088                  ___umodsi3
-                  0x00308e                  ___mulp32eds3
                   0x00308e                  ___mulsi3
+                  0x00308e                  ___mulp32eds3
                   0x00308e                  ___mulp32peds3
                   0x00309a                  ___subdf3
                   0x0030a6                  ___adddf3
@@ -489,29 +486,24 @@ External Symbols in Program Memory (by address):
                   0x005534                  _getc_program3B
                   0x005562                  _pI2C
                   0x005658                  _emicbus2_rx_MSG
-                  0x005726                  _onReset
-                  0x005734                  _etOut1
-                  0x005758                  _etOut1_awaitPoll
-                  0x0057d2                  _save
-                  0x005800                  _load
-                  0x00582e                  _setTime1
-                  0x00584a                  _timer1_Poll
-                  0x005888                  _USB_Init
-                  0x005890                  _pUSB
-                  0x0058a8                  _Poll_USB
-                  0x0058ae                  _ISR_UART1_CALLBACK
-                  0x0058c8                  _USB_sendCount
-                  0x0058d2                  _LEDs_led_init
-                  0x0058da                  _LEDs_led_state
-                  0x00590a                  _getSystemMilis
-                  0x005914                  _callback
-                  0x005926                  _systemTimeInit
-                  0x005930                  _initSystem
-                  0x00593e                  _main
-                  0x005956                  _timer4_init
-                  0x00596c                  _Init_USBDriver
-                  0x005978                  _Poll_USBDriver
-                  0x00597e                  _await_poll
+                  0x00571a                  _save
+                  0x005748                  _load
+                  0x005776                  _USB_Init
+                  0x00577e                  _pUSB
+                  0x005796                  _Poll_USB
+                  0x00579c                  _ISR_UART1_CALLBACK
+                  0x0057b6                  _USB_sendCount
+                  0x0057c0                  _LEDs_led_init
+                  0x0057c8                  _LEDs_led_state
+                  0x0057f8                  _getSystemMilis
+                  0x005802                  _callback
+                  0x005814                  _systemTimeInit
+                  0x00581e                  _initSystem
+                  0x00582c                  _main
+                  0x00583e                  _timer4_init
+                  0x005854                  _Init_USBDriver
+                  0x005860                  _Poll_USBDriver
+                  0x005866                  _etOut1
                   0x006000                  _myFlashMemory
 
 External Symbols in Program Memory (by name):
@@ -522,12 +514,12 @@ External Symbols in Program Memory (by name):
                   0x004240                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o:_stagePut
                   0x00480a                  _EMICBus2_init
                   0x0054f8                  _ErasePage
-                  0x0058ae                  _ISR_UART1_CALLBACK
-                  0x00596c                  _Init_USBDriver
-                  0x0058d2                  _LEDs_led_init
-                  0x0058da                  _LEDs_led_state
-                  0x0058a8                  _Poll_USB
-                  0x005978                  _Poll_USBDriver
+                  0x00579c                  _ISR_UART1_CALLBACK
+                  0x005854                  _Init_USBDriver
+                  0x0057c0                  _LEDs_led_init
+                  0x0057c8                  _LEDs_led_state
+                  0x005796                  _Poll_USB
+                  0x005860                  _Poll_USBDriver
                   0x00544e                  _ReadMem
                   0x0050cc                  _UART1_IN_count
                   0x0050c2                  _UART1_IN_pop
@@ -547,8 +539,8 @@ External Symbols in Program Memory (by name):
                   0x004eba                  _UART1_pop
                   0x004e64                  _UART1_push
                   0x004f0e                  _UART1_simplexMode
-                  0x005888                  _USB_Init
-                  0x0058c8                  _USB_sendCount
+                  0x005776                  _USB_Init
+                  0x0057b6                  _USB_sendCount
                   0x005488                  _WriteMem
                   0x000396                  __DefaultInterrupt
                   0x0002ec                  __T4Interrupt
@@ -641,8 +633,7 @@ External Symbols in Program Memory (by name):
                   0x0003d4                  _atoi
                   0x000434                  _atol
                   0x00049c                  _atoll
-                  0x00597e                  _await_poll
-                  0x005914                  _callback
+                  0x005802                  _callback
                   0x003c24                  _copysignl
                   0x0041e4                  _emicbus2_crc16
                   0x00429a                  _emicbus2_in_bind
@@ -655,30 +646,27 @@ External Symbols in Program Memory (by name):
                   0x004150                  _emicbus2_stage_stream
                   0x004502                  _emicbus2_tx
                   0x0044f2                  _emicbus2_tx_idle
-                  0x005734                  _etOut1
-                  0x005758                  _etOut1_awaitPoll
+                  0x005866                  _etOut1
                   0x003c58                  _fabsl
                   0x003c6e                  _floorl
                   0x005400                  _flushProgramPutc3B
                   0x003d68                  _fmodl
-                  0x00590a                  _getSystemMilis
+                  0x0057f8                  _getSystemMilis
                   0x005534                  _getc_program3B
-                  0x005930                  _initSystem
-                  0x005800                  _load
-                  0x00593e                  _main
+                  0x00581e                  _initSystem
+                  0x005748                  _load
+                  0x00582c                  _main
                   0x000500                  _memcpy
                   0x00050e                  _memset
                   0x006000                  _myFlashMemory
-                  0x005726                  _onReset
                   0x005562                  _pI2C
-                  0x005890                  _pUSB
+                  0x00577e                  _pUSB
                   0x004830                  _poll_EMICBus2
                   0x00541a                  _putc_program3B
-                  0x0057d2                  _save
+                  0x00571a                  _save
                   0x004094                  _scalbnf
                   0x0040e8                  _scalbnl
                   0x004af4                  _sendDataToStream
-                  0x00582e                  _setTime1
                   0x0005d6                  _snprintf
                   0x002eb2                  _strcpy
                   0x005254                  _streamCloseReadFrame
@@ -705,9 +693,8 @@ External Symbols in Program Memory (by name):
                   0x000640                  _strtod
                   0x00063a                  _strtof
                   0x000646                  _strtold
-                  0x005926                  _systemTimeInit
-                  0x00584a                  _timer1_Poll
-                  0x005956                  _timer4_init
+                  0x005814                  _systemTimeInit
+                  0x00583e                  _timer4_init
                   0x001faa                  _tolower
                   0x002ec0                  _toupper
                   0x0019fa                  _vfprintf
@@ -747,7 +734,6 @@ LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo
 LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o
 LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o
 LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Persist.o
-LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\await.o
 LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\main.o
 LOAD C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o
                     0x0001                  __MPLAB_BUILD = 0x1
@@ -1890,7 +1876,7 @@ LOAD default_isr
 LOAD data_init
 
 __c30_signature
-                  0x000460        0x23a
+                  0x000460        0x234
  __c30_signature
                   0x000460          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer.o
  __c30_signature
@@ -1930,161 +1916,159 @@ __c30_signature
  __c30_signature
                   0x0004cc          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Persist.o
  __c30_signature
-                  0x0004d2          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\await.o
+                  0x0004d2          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\main.o
  __c30_signature
-                  0x0004d8          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\main.o
+                  0x0004d8          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o
  __c30_signature
-                  0x0004de          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o
+                  0x0004de          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x0004e4          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
+                  0x0004e4          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x0004ea          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
+                  0x0004ea          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.XX_o)
  __c30_signature
-                  0x0004f0          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.XX_o)
+                  0x0004f0          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atof.XX_o)
  __c30_signature
-                  0x0004f6          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atof.XX_o)
+                  0x0004f6          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atoi.XX_o)
  __c30_signature
-                  0x0004fc          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atoi.XX_o)
+                  0x0004fc          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atol.XX_o)
  __c30_signature
-                  0x000502          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atol.XX_o)
+                  0x000502          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atoll.XX_o)
  __c30_signature
-                  0x000508          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(atoll.XX_o)
+                  0x000508          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memcpy.XX_o)
  __c30_signature
-                  0x00050e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memcpy.XX_o)
+                  0x00050e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memset.XX_o)
  __c30_signature
-                  0x000514          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(memset.XX_o)
+                  0x000514          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(snprintf.XX_o)
  __c30_signature
-                  0x00051a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(snprintf.XX_o)
+                  0x00051a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strtod.XX_o)
  __c30_signature
-                  0x000520          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strtod.XX_o)
+                  0x000520          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(vsnprintf.XX_o)
  __c30_signature
-                  0x000526          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(vsnprintf.XX_o)
+                  0x000526          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
  __c30_signature
-                  0x00052c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
+                  0x00052c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(floatscan.XX_o)
  __c30_signature
-                  0x000532          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(floatscan.XX_o)
+                  0x000532          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(shgetc.XX_o)
  __c30_signature
-                  0x000538          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(shgetc.XX_o)
+                  0x000538          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(vfprintf.XX_o)
  __c30_signature
-                  0x00053e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(vfprintf.XX_o)
+                  0x00053e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__io_fmt_needed.XX_o)
  __c30_signature
-                  0x000544          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__io_fmt_needed.XX_o)
+                  0x000544          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__pop_float.XX_o)
  __c30_signature
-                  0x00054a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__pop_float.XX_o)
+                  0x00054a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__pop_int.XX_o)
  __c30_signature
-                  0x000550          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__pop_int.XX_o)
+                  0x000550          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__pop_ptr.XX_o)
  __c30_signature
-                  0x000556          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__pop_ptr.XX_o)
+                  0x000556          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__printf_core.XX_o)
  __c30_signature
-                  0x00055c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__printf_core.XX_o)
+                  0x00055c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__uflow.XX_o)
  __c30_signature
-                  0x000562          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__uflow.XX_o)
+                  0x000562          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strlen.XX_o)
  __c30_signature
-                  0x000568          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strlen.XX_o)
+                  0x000568          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(tolower.XX_o)
  __c30_signature
-                  0x00056e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(tolower.XX_o)
+                  0x00056e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_a.XX_o)
  __c30_signature
-                  0x000574          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_a.XX_o)
+                  0x000574          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_d.XX_o)
  __c30_signature
-                  0x00057a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_d.XX_o)
+                  0x00057a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_fp.XX_o)
  __c30_signature
-                  0x000580          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_fp.XX_o)
+                  0x000580          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_o.XX_o)
  __c30_signature
-                  0x000586          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_o.XX_o)
+                  0x000586          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_s.XX_o)
  __c30_signature
-                  0x00058c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_s.XX_o)
+                  0x00058c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_u.XX_o)
  __c30_signature
-                  0x000592          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_u.XX_o)
+                  0x000592          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_x.XX_o)
  __c30_signature
-                  0x000598          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_x.XX_o)
+                  0x000598          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__toread.XX_o)
  __c30_signature
-                  0x00059e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__toread.XX_o)
+                  0x00059e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strcpy.XX_o)
  __c30_signature
-                  0x0005a4          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(strcpy.XX_o)
+                  0x0005a4          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(toupper.XX_o)
  __c30_signature
-                  0x0005aa          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(toupper.XX_o)
+                  0x0005aa          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__stdio_exit.XX_o)
  __c30_signature
-                  0x0005b0          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__stdio_exit.XX_o)
+                  0x0005b0          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(stpcpy.XX_o)
  __c30_signature
-                  0x0005b6          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(stpcpy.XX_o)
+                  0x0005b6          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(deqltle.XX_o)
  __c30_signature
-                  0x0005bc          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(deqltle.XX_o)
+                  0x0005bc          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dgtge.XX_o)
  __c30_signature
-                  0x0005c2          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dgtge.XX_o)
+                  0x0005c2          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(divsi3.XX_o)
  __c30_signature
-                  0x0005c8          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(divsi3.XX_o)
+                  0x0005c8          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dne.XX_o)
  __c30_signature
-                  0x0005ce          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dne.XX_o)
+                  0x0005ce          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(extendsfdf.XX_o)
  __c30_signature
-                  0x0005d4          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(extendsfdf.XX_o)
+                  0x0005d4          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(fixdfsi.XX_o)
  __c30_signature
-                  0x0005da          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(fixdfsi.XX_o)
+                  0x0005da          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatsidf.XX_o)
  __c30_signature
-                  0x0005e0          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatsidf.XX_o)
+                  0x0005e0          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.XX_o)
  __c30_signature
-                  0x0005e6          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatsisf.XX_o)
+                  0x0005e6          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatunsidf.XX_o)
  __c30_signature
-                  0x0005ec          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatunsidf.XX_o)
+                  0x0005ec          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(funpack.XX_o)
  __c30_signature
-                  0x0005f2          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(funpack.XX_o)
+                  0x0005f2          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(truncdfsf.XX_o)
  __c30_signature
-                  0x0005f8          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(truncdfsf.XX_o)
+                  0x0005f8          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.XX_o)
  __c30_signature
-                  0x0005fe          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(umodsi3.XX_o)
+                  0x0005fe          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
  __c30_signature
-                  0x000604          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(mulsi3.XX_o)
+                  0x000604          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpadd.XX_o)
  __c30_signature
-                  0x00060a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpadd.XX_o)
+                  0x00060a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpdiv.XX_o)
  __c30_signature
-                  0x000610          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpdiv.XX_o)
+                  0x000610          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpmul.XX_o)
  __c30_signature
-                  0x000616          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpmul.XX_o)
+                  0x000616          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpsubs.XX_o)
  __c30_signature
-                  0x00061c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpsubs.XX_o)
+                  0x00061c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(divmoddi3.XX_o)
  __c30_signature
-                  0x000622          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x000622          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(muldi3.XX_o)
  __c30_signature
-                  0x000628          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(muldi3.XX_o)
+                  0x000628          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dcompare.XX_o)
  __c30_signature
-                  0x00062e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dcompare.XX_o)
+                  0x00062e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dtype.XX_o)
  __c30_signature
-                  0x000634          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dtype.XX_o)
+                  0x000634          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dunpack.XX_o)
  __c30_signature
-                  0x00063a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dunpack.XX_o)
+                  0x00063a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dunpack2.XX_o)
  __c30_signature
-                  0x000640          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dunpack2.XX_o)
+                  0x000640          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatdidf.XX_o)
  __c30_signature
-                  0x000646          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatdidf.XX_o)
+                  0x000646          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.XX_o)
  __c30_signature
-                  0x00064c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatdisf.XX_o)
+                  0x00064c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatundidf.XX_o)
  __c30_signature
-                  0x000652          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatundidf.XX_o)
+                  0x000652          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.XX_o)
  __c30_signature
-                  0x000658          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(floatundisf.XX_o)
+                  0x000658          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(fpack.XX_o)
  __c30_signature
-                  0x00065e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(fpack.XX_o)
+                  0x00065e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(umuldi3.XX_o)
  __c30_signature
-                  0x000664          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(umuldi3.XX_o)
+                  0x000664          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpack.XX_o)
  __c30_signature
-                  0x00066a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpack.XX_o)
+                  0x00066a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpropagateNaN.XX_o)
  __c30_signature
-                  0x000670          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(dpropagateNaN.XX_o)
+                  0x000670          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(copysignl.XX_o)
  __c30_signature
-                  0x000676          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(copysignl.XX_o)
+                  0x000676          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(fabsl.XX_o)
  __c30_signature
-                  0x00067c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(fabsl.XX_o)
+                  0x00067c          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(floorl.XX_o)
  __c30_signature
-                  0x000682          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(floorl.XX_o)
+                  0x000682          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(fmodl.XX_o)
  __c30_signature
-                  0x000688          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(fmodl.XX_o)
+                  0x000688          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(scalbnf.XX_o)
  __c30_signature
-                  0x00068e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(scalbnf.XX_o)
- __c30_signature
-                  0x000694          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(scalbnl.XX_o)
+                  0x00068e          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a(scalbnl.XX_o)
 
 __xc_reference_data
 
-.nbss               0x0800         0x3c
+.nbss               0x0800         0x32
  .nbss              0x0800         0x24 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o
                     0x0800                  _emicbus2_tx_ok
                     0x0802                  _emicbus2_rx_ok
@@ -2093,47 +2077,41 @@ __xc_reference_data
                     0x0808                  _emicbus2_bus_reset
                     0x080a                  _emicbus2_drop
                     0x080c                  _emicbus2_stage_len
- .nbss              0x0824          0xa C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer_api1.o
- .nbss              0x082e          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\systemTimer.o
- .nbss              0x0832          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o
-                    0x0832                  _offsetPutc3B
-                    0x0834                  _offset
- .nbss              0x0836          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer.o
- .nbss              0x0838          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\UART1.o
-                    0x0838                  _UART1_flowControlVar
-                    0x0839                  _UART1_inverted
- .nbss              0x083a          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\USB_API.o
+ .nbss              0x0824          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\systemTimer.o
+ .nbss              0x0828          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o
+                    0x0828                  _offsetPutc3B
+                    0x082a                  _offset
+ .nbss              0x082c          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer.o
+ .nbss              0x082e          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\UART1.o
+                    0x082e                  _UART1_flowControlVar
+                    0x082f                  _UART1_inverted
+ .nbss              0x0830          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\USB_API.o
 
-.ndata              0x083c          0x2
- .ndata             0x083c          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o
+.ndata              0x0832          0x2
+ .ndata             0x0832          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o
 
-.bss                0x083e        0x7ac
- .bss               0x083e        0x40c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\UART1.o
-                    0x083e                  _UART1_IN_fifo
-                    0x0a44                  _UART1_OUT_fifo
- .bss               0x0c4a        0x3a0 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o
-                    0x0c4a                  _emicbus2_stage
+.bss                0x0834        0x7ac
+ .bss               0x0834        0x40c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\UART1.o
+                    0x0834                  _UART1_IN_fifo
+                    0x0a3a                  _UART1_OUT_fifo
+ .bss               0x0c40        0x3a0 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\emicbus2_core.o
+                    0x0c40                  _emicbus2_stage
 
-.data               0x0fea         0x74
- .data              0x0fea         0x36 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(floatscan.XX_o)
- .data              0x1020         0x1e c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__printf_core.XX_o)
- .data              0x103e         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_a.XX_o)
- .data              0x104e         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_fp.XX_o)
+.data               0x0fe0         0x78
+ .data              0x0fe0         0x36 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(floatscan.XX_o)
+ .data              0x1016         0x1e c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__printf_core.XX_o)
+ .data              0x1034         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_a.XX_o)
+ .data              0x1044         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_fp.XX_o)
+ .data              0x1054          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o
+                    0x1054                  _bufferPutc3B
 
-.bss                0x105e          0xa
- .bss               0x105e          0xa C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o
-
-.data               0x1068          0x4
- .data              0x1068          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o
-                    0x1068                  _bufferPutc3B
-
-.bss                0x106c          0x4
- .bss               0x106c          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
-                    0x106c                  ___errno_val
- .bss               0x106e          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__stdio_exit.XX_o)
-                    0x106e                  ___stdin_used
-                    0x106e                  ___stdout_used
-                    0x106e                  ___stderr_used
+.bss                0x1058          0x4
+ .bss               0x1058          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
+                    0x1058                  ___errno_val
+ .bss               0x105a          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__stdio_exit.XX_o)
+                    0x105a                  ___stdin_used
+                    0x105a                  ___stdout_used
+                    0x105a                  ___stderr_used
 
 myFlashSpace      0x006000        0x400
  myFlashSpace     0x006000        0x400 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Flash.o
@@ -2237,40 +2215,33 @@ myFlashSpace      0x006000        0x400
                   0x005562                  _pI2C
                   0x005658                  _emicbus2_rx_MSG
 
-.dinit            0x005662         0xc4
- .dinit           0x005662         0xc4 data_init
+.dinit            0x005662         0xb8
+ .dinit           0x005662         0xb8 data_init
 
-.text             0x005726        0x260
- .text            0x005726         0xac C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o
-                  0x005726                  _onReset
-                  0x005734                  _etOut1
-                  0x005758                  _etOut1_awaitPoll
- .text            0x0057d2         0x5c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Persist.o
-                  0x0057d2                  _save
-                  0x005800                  _load
- .text            0x00582e         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer_api1.o
-                  0x00582e                  _setTime1
-                  0x00584a                  _timer1_Poll
- .text            0x005888         0x4a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\USB_API.o
-                  0x005888                  _USB_Init
-                  0x005890                  _pUSB
-                  0x0058a8                  _Poll_USB
-                  0x0058ae                  _ISR_UART1_CALLBACK
-                  0x0058c8                  _USB_sendCount
- .text            0x0058d2         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\led_led.o
-                  0x0058d2                  _LEDs_led_init
-                  0x0058da                  _LEDs_led_state
- .text            0x00590a         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\systemTimer.o
-                  0x00590a                  _getSystemMilis
-                  0x005914                  _callback
-                  0x005926                  _systemTimeInit
- .text            0x005930         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\main.o
-                  0x005930                  _initSystem
-                  0x00593e                  _main
- .text            0x005956         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer.o
-                  0x005956                  _timer4_init
- .text            0x00596c         0x12 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\MCP2200.o
-                  0x00596c                  _Init_USBDriver
-                  0x005978                  _Poll_USBDriver
- .text            0x00597e          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\await.o
-                  0x00597e                  _await_poll
+.text             0x00571a        0x156
+ .text            0x00571a         0x5c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\Persist.o
+                  0x00571a                  _save
+                  0x005748                  _load
+ .text            0x005776         0x4a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\USB_API.o
+                  0x005776                  _USB_Init
+                  0x00577e                  _pUSB
+                  0x005796                  _Poll_USB
+                  0x00579c                  _ISR_UART1_CALLBACK
+                  0x0057b6                  _USB_sendCount
+ .text            0x0057c0         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\led_led.o
+                  0x0057c0                  _LEDs_led_init
+                  0x0057c8                  _LEDs_led_state
+ .text            0x0057f8         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\systemTimer.o
+                  0x0057f8                  _getSystemMilis
+                  0x005802                  _callback
+                  0x005814                  _systemTimeInit
+ .text            0x00581e         0x20 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\main.o
+                  0x00581e                  _initSystem
+                  0x00582c                  _main
+ .text            0x00583e         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\timer.o
+                  0x00583e                  _timer4_init
+ .text            0x005854         0x12 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\MCP2200.o
+                  0x005854                  _Init_USBDriver
+                  0x005860                  _Poll_USBDriver
+ .text            0x005866          0xa C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\build\default\production\userFncFile.o
+                  0x005866                  _etOut1

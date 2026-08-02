@@ -16,7 +16,6 @@ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo\buil
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/streamOut.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/emicbus2_core.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/Persist.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/await.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/system.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/userFncFile.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/system.c
@@ -52,8 +51,6 @@ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/
 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/emicbus2_core.h:
 
 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/Persist.h:
-
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/await.h:
 
 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/inc/system.h:
 
