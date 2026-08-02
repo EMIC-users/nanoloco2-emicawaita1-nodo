@@ -238,12 +238,12 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x3f48          0x5eec  (24300)
 .const                      0x4148                0x10            0x18  (24)
-.text                       0x4158              0x150a          0x1f8f  (8079)
-.dinit                      0x5662                0xc4           0x126  (294)
-.text                       0x5726               0x260           0x390  (912)
+.text                       0x4158              0x15f0          0x20e8  (8424)
+.dinit                      0x5748                0xc4           0x126  (294)
+.text                       0x580c               0x1b4           0x28e  (654)
 myFlashSpace                0x6000               0x400           0x600  (1536)
 
-                 Total "program" memory used (bytes):         0x8949  (35145) 53%
+                 Total "program" memory used (bytes):         0x89a0  (35232) 53%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -485,29 +485,29 @@ External Symbols in Program Memory (by address):
                   0x005534                  _getc_program3B
                   0x005562                  _pI2C
                   0x005658                  _emicbus2_rx_MSG
-                  0x005726                  _onReset
-                  0x005734                  _etOut1
-                  0x005758                  _etOut1_awaitPoll
-                  0x0057d2                  _save
-                  0x005800                  _load
-                  0x00582e                  _setTime1
-                  0x00584a                  _timer1_Poll
-                  0x005888                  _USB_Init
-                  0x005890                  _pUSB
-                  0x0058a8                  _Poll_USB
-                  0x0058ae                  _ISR_UART1_CALLBACK
-                  0x0058c8                  _USB_sendCount
-                  0x0058d2                  _LEDs_led_init
-                  0x0058da                  _LEDs_led_state
-                  0x00590a                  _getSystemMilis
-                  0x005914                  _callback
-                  0x005926                  _systemTimeInit
-                  0x005930                  _initSystem
-                  0x00593e                  _main
-                  0x005956                  _timer4_init
-                  0x00596c                  _Init_USBDriver
-                  0x005978                  _Poll_USBDriver
-                  0x00597e                  _await_poll
+                  0x005662                  _onReset
+                  0x005670                  _etOut1
+                  0x005694                  _etOut1_awaitPoll
+                  0x00580c                  _save
+                  0x00583a                  _load
+                  0x005868                  _setTime1
+                  0x005884                  _timer1_Poll
+                  0x0058c2                  _USB_Init
+                  0x0058ca                  _pUSB
+                  0x0058e2                  _Poll_USB
+                  0x0058e8                  _ISR_UART1_CALLBACK
+                  0x005902                  _USB_sendCount
+                  0x00590c                  _LEDs_led_init
+                  0x005914                  _LEDs_led_state
+                  0x005944                  _getSystemMilis
+                  0x00594e                  _callback
+                  0x005960                  _systemTimeInit
+                  0x00596a                  _initSystem
+                  0x005978                  _main
+                  0x005990                  _timer4_init
+                  0x0059a6                  _Init_USBDriver
+                  0x0059b2                  _Poll_USBDriver
+                  0x0059b8                  _await_poll
                   0x006000                  _myFlashMemory
 
 External Symbols in Program Memory (by name):
@@ -518,12 +518,12 @@ External Symbols in Program Memory (by name):
                   0x004240                  /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/emicbus2_core.o:_stagePut
                   0x00480a                  _EMICBus2_init
                   0x0054f8                  _ErasePage
-                  0x0058ae                  _ISR_UART1_CALLBACK
-                  0x00596c                  _Init_USBDriver
-                  0x0058d2                  _LEDs_led_init
-                  0x0058da                  _LEDs_led_state
-                  0x0058a8                  _Poll_USB
-                  0x005978                  _Poll_USBDriver
+                  0x0058e8                  _ISR_UART1_CALLBACK
+                  0x0059a6                  _Init_USBDriver
+                  0x00590c                  _LEDs_led_init
+                  0x005914                  _LEDs_led_state
+                  0x0058e2                  _Poll_USB
+                  0x0059b2                  _Poll_USBDriver
                   0x00544e                  _ReadMem
                   0x0050cc                  _UART1_IN_count
                   0x0050c2                  _UART1_IN_pop
@@ -543,8 +543,8 @@ External Symbols in Program Memory (by name):
                   0x004eba                  _UART1_pop
                   0x004e64                  _UART1_push
                   0x004f0e                  _UART1_simplexMode
-                  0x005888                  _USB_Init
-                  0x0058c8                  _USB_sendCount
+                  0x0058c2                  _USB_Init
+                  0x005902                  _USB_sendCount
                   0x005488                  _WriteMem
                   0x000396                  __DefaultInterrupt
                   0x0002ec                  __T4Interrupt
@@ -637,8 +637,8 @@ External Symbols in Program Memory (by name):
                   0x0003d4                  _atoi
                   0x000434                  _atol
                   0x00049c                  _atoll
-                  0x00597e                  _await_poll
-                  0x005914                  _callback
+                  0x0059b8                  _await_poll
+                  0x00594e                  _callback
                   0x003c24                  _copysignl
                   0x0041e4                  _emicbus2_crc16
                   0x00429a                  _emicbus2_in_bind
@@ -651,30 +651,30 @@ External Symbols in Program Memory (by name):
                   0x004150                  _emicbus2_stage_stream
                   0x004502                  _emicbus2_tx
                   0x0044f2                  _emicbus2_tx_idle
-                  0x005734                  _etOut1
-                  0x005758                  _etOut1_awaitPoll
+                  0x005670                  _etOut1
+                  0x005694                  _etOut1_awaitPoll
                   0x003c58                  _fabsl
                   0x003c6e                  _floorl
                   0x005400                  _flushProgramPutc3B
                   0x003d68                  _fmodl
-                  0x00590a                  _getSystemMilis
+                  0x005944                  _getSystemMilis
                   0x005534                  _getc_program3B
-                  0x005930                  _initSystem
-                  0x005800                  _load
-                  0x00593e                  _main
+                  0x00596a                  _initSystem
+                  0x00583a                  _load
+                  0x005978                  _main
                   0x000500                  _memcpy
                   0x00050e                  _memset
                   0x006000                  _myFlashMemory
-                  0x005726                  _onReset
+                  0x005662                  _onReset
                   0x005562                  _pI2C
-                  0x005890                  _pUSB
+                  0x0058ca                  _pUSB
                   0x004830                  _poll_EMICBus2
                   0x00541a                  _putc_program3B
-                  0x0057d2                  _save
+                  0x00580c                  _save
                   0x004094                  _scalbnf
                   0x0040e8                  _scalbnl
                   0x004af4                  _sendDataToStream
-                  0x00582e                  _setTime1
+                  0x005868                  _setTime1
                   0x0005d6                  _snprintf
                   0x002eb2                  _strcpy
                   0x005254                  _streamCloseReadFrame
@@ -701,9 +701,9 @@ External Symbols in Program Memory (by name):
                   0x000640                  _strtod
                   0x00063a                  _strtof
                   0x000646                  _strtold
-                  0x005926                  _systemTimeInit
-                  0x00584a                  _timer1_Poll
-                  0x005956                  _timer4_init
+                  0x005960                  _systemTimeInit
+                  0x005884                  _timer1_Poll
+                  0x005990                  _timer4_init
                   0x001faa                  _tolower
                   0x002ec0                  _toupper
                   0x0019fa                  _vfprintf
@@ -2165,7 +2165,7 @@ myFlashSpace      0x006000        0x400
                     0xc150                  _emicbus2_stage_stream
                     0xc154                  _emicbus2_in_stream
 
-.text             0x004158       0x150a
+.text             0x004158       0x15f0
  .text            0x004158        0x702 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/emicbus2_core.o
                   0x004158                  _emicbus2_my_id
                   0x0041e4                  _emicbus2_crc16
@@ -2232,41 +2232,41 @@ myFlashSpace      0x006000        0x400
  .text            0x005562        0x100 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/frame_MSG.o
                   0x005562                  _pI2C
                   0x005658                  _emicbus2_rx_MSG
+ .text            0x005662         0xe6 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/userFncFile.o
+                  0x005662                  _onReset
+                  0x005670                  _etOut1
+                  0x005694                  _etOut1_awaitPoll
 
-.dinit            0x005662         0xc4
- .dinit           0x005662         0xc4 data_init
+.dinit            0x005748         0xc4
+ .dinit           0x005748         0xc4 data_init
 
-.text             0x005726        0x260
- .text            0x005726         0xac /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/userFncFile.o
-                  0x005726                  _onReset
-                  0x005734                  _etOut1
-                  0x005758                  _etOut1_awaitPoll
- .text            0x0057d2         0x5c /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/Persist.o
-                  0x0057d2                  _save
-                  0x005800                  _load
- .text            0x00582e         0x5a /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/timer_api1.o
-                  0x00582e                  _setTime1
-                  0x00584a                  _timer1_Poll
- .text            0x005888         0x4a /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/USB_API.o
-                  0x005888                  _USB_Init
-                  0x005890                  _pUSB
-                  0x0058a8                  _Poll_USB
-                  0x0058ae                  _ISR_UART1_CALLBACK
-                  0x0058c8                  _USB_sendCount
- .text            0x0058d2         0x38 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/led_led.o
-                  0x0058d2                  _LEDs_led_init
-                  0x0058da                  _LEDs_led_state
- .text            0x00590a         0x26 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/systemTimer.o
-                  0x00590a                  _getSystemMilis
-                  0x005914                  _callback
-                  0x005926                  _systemTimeInit
- .text            0x005930         0x26 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/main.o
-                  0x005930                  _initSystem
-                  0x00593e                  _main
- .text            0x005956         0x16 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/timer.o
-                  0x005956                  _timer4_init
- .text            0x00596c         0x12 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/MCP2200.o
-                  0x00596c                  _Init_USBDriver
-                  0x005978                  _Poll_USBDriver
- .text            0x00597e          0x8 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/await.o
-                  0x00597e                  _await_poll
+.text             0x00580c        0x1b4
+ .text            0x00580c         0x5c /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/Persist.o
+                  0x00580c                  _save
+                  0x00583a                  _load
+ .text            0x005868         0x5a /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/timer_api1.o
+                  0x005868                  _setTime1
+                  0x005884                  _timer1_Poll
+ .text            0x0058c2         0x4a /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/USB_API.o
+                  0x0058c2                  _USB_Init
+                  0x0058ca                  _pUSB
+                  0x0058e2                  _Poll_USB
+                  0x0058e8                  _ISR_UART1_CALLBACK
+                  0x005902                  _USB_sendCount
+ .text            0x00590c         0x38 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/led_led.o
+                  0x00590c                  _LEDs_led_init
+                  0x005914                  _LEDs_led_state
+ .text            0x005944         0x26 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/systemTimer.o
+                  0x005944                  _getSystemMilis
+                  0x00594e                  _callback
+                  0x005960                  _systemTimeInit
+ .text            0x00596a         0x26 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/main.o
+                  0x00596a                  _initSystem
+                  0x005978                  _main
+ .text            0x005990         0x16 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/timer.o
+                  0x005990                  _timer4_init
+ .text            0x0059a6         0x12 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/MCP2200.o
+                  0x0059a6                  _Init_USBDriver
+                  0x0059b2                  _Poll_USBDriver
+ .text            0x0059b8          0x8 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/EmicAwaitA1/Nodo/build/default/production/await.o
+                  0x0059b8                  _await_poll
