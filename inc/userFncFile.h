@@ -13,8 +13,6 @@
 
 /* Function Prototypes */
 void onReset();
-void eI2C(char* tag, const streamIn_t* const msg);
-void eUSB(char* tag, const streamIn_t* const msg);
 void etOut1();
 void etOut1_awaitPoll(void);
 

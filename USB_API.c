@@ -34,25 +34,6 @@ void pUSB(char* format,...)
 
 void Poll_USB(void)
 {
-	if(frameFlagUSB)
-	{
-		frameFlagUSB = 0;
-		char tag[20];
-		char d;
-		uint8_t i = 0;
-		d = UART1_IN_pop();
-		while (!UART1_is_empty(&UART1_IN_fifo) && d != '\t' && i < 20)
-		{
-			tag[i++] = d;
-			d = UART1_IN_pop();
-		}
-		tag[i] = 0;
-		eUSB(tag,&streamIn_Uart1);
-		while(!UART1_is_empty(&UART1_IN_fifo))
-		{
-			d = UART1_IN_pop();
-		}	
-	}
 
 }
 

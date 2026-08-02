@@ -215,6 +215,9 @@
 
     // EMIC-Await (esperas no bloqueantes en bloques del editor)
 
+// La categoria del palette es el DOMINIO de la esperable (TIME), no el
+// mecanismo: delay convive con setTimeN/timeOutN de timer_api. El runtime
+// await (scheduler) sigue siendo infraestructura transversal de System.
 
 
 
