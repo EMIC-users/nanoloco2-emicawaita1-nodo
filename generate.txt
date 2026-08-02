@@ -1,0 +1,247 @@
+
+
+    //-------------- Hardware Config ---------------------
+
+    //------------------- Process EMIC-Generate files result ----------------
+
+// Functions:
+
+// EMIC-Await:
+
+
+// Events:
+
+
+    //------------------- APIs -----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+////  EMIC:json(type = configurator)
+////  {
+////      "brief": "El protoclo define el formato de los datos enviados y recibidos",
+////      "legend": "seleccione protocolo",
+////      "name": "USBProto",
+////      "options": 
+////      [
+////          {
+////              "legend": "EMIC Mesage",
+////              "value": "EMIC_Msg",
+////              "brief": "Mensajes para intercambio de información entre modulos y software EMIC"
+////          } ,
+////          {
+////              "legend": "TEXT Mesage",
+////              "value": "TEXT_Msg",
+////              "brief": "Mensajes de textos terminados en fin de linea - para sistemas heredados"
+////           }
+////      ]
+////  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================[end of file]============================================*/
+
+
+
+
+
+
+
+
+
+/*==================[end of file]============================================*/
+
+
+
+
+
+
+// EMICBus V2 (spec EMICBUS_V2_SPEC.md): trama corta MSG con CRC16 sobre I2C
+// general call multi-master, con descarte del auto-mensaje POR ESTADO
+// (spec 3.2) y CTRL RESET broadcast (reentrada al bootloader V2).
+// Arquitectura 3.3 del plan: un archivo por trama (coleccion
+// emicbus2.frames.*) + selector generado en el core con EMIC:foreach.
+// El contrato Send/Reception del editor es IDENTICO al de EMICBus v1.
+// Requiere PCB con pines SCL/SDA nombrados (bus-clear del recovery).
+
+
+
+
+// Frames habilitados (cada uno se registra en emicbus2.frames.*). El core
+// va DESPUES: su selector se genera con la coleccion ya completa.
+// Frame MSG (TYPE 0x01, spec 2.2) — mensaje EMIC pub/sub, trama corta.
+// Se registra en la coleccion emicbus2.frames.* (el selector del core lo
+// despacha por TYPE) y aporta pI2C (Send) + emicbus2_rx_MSG -> eI2C.
+
+
+
+
+
+
+
+// Frame CTRL (TYPE 0x12, spec 5) — subconjunto E2: solo RESET broadcast,
+// la reentrada normada al bootloader V2 con la app corriendo (spec 6.4).
+
+
+
+
+
+
+
+
+
+
+
+
+    // Persistencia
+
+
+
+
+
+
+
+    // EMIC-Await (esperas no bloqueantes en bloques del editor)
+
+
+
+
+// El scheduler solo se compila si el programa del integrador tiene esperas:
+// el transpiler define usedFunction.await_scheduler + la coleccion awaits.*
+// en usedFunction.emic (EMIC_AWAIT_SPEC.md 12.5). Sin esperas, esta API solo
+// publica la esperable 'delay' en el discovery.
+
+
+
+
+    //-------------------- main  -----------------------
+
+
+
+
+
+
+
+
+
+
+
+    //------------------- Copy  EMIC-Generate files result ----------------
+
+    //------------------- Set userFncFile.c as a copiler module ----------------
+
+    //------------------- Add all compiler modules to the project. ----------------
+    
+
